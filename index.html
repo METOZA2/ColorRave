@@ -4,18 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css" integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/styles/style.css" />
     <link rel="stylesheet" href="./src/styles/reset.css" />
   </head>
   <body>
     <header class="header">
+      <div class="container header-container">
       <a href="./index.html" class="header-link">
         <img src="./src/images/logo_1.webp" alt="header-logo" class="logo" />
       </a>
       <nav class="header-nav">
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="./index.html" class="nav-link">Main page</a>
+            <a href="./index.html" class="nav-link main-nav-link">Main page</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Benefits</a>
@@ -36,15 +41,17 @@
       </nav>
       <ul class="header-language">
         <li class="language-item">
-          <a href="#" class="language-link">Ua</a>
+          <a href="#" class="language-link ">Ua</a>
         </li>
         <li class="language-item">
-          <a href="#" class="language-link">Eng</a>
+          <a href="#" class="language-link main-language-link">Eng</a>
         </li>
       </ul>
+    </div>
     </header>
     <main class="main">
       <section class="hero">
+        <div class="container hero-container">
         <article class="hero-article">
           <img src="./src/images/logo_2.webp" alt="logo" class="hero-logo" />
           <h3 class="hero-logo-part">С&R</h3>
@@ -57,8 +64,10 @@
           </p>
           <button class="hero-button">Buy my Nike</button>
         </article>
+      </div>
       </section>
       <section class="benefits">
+        <div class="container benefits-container">
         <ul class="benefits-list">
           <li class="benefits-item">
             <h3 class="benefits-title">Premium Quality</h3>
@@ -85,7 +94,9 @@
             />
           </li>
         </ul>
+      </div>
       </section>
+      <div class="container review-container">
       <section class="reviews">
         <h2 class="reviews-title">Reviews</h2>
         <ul class="reviews-list">
@@ -99,8 +110,8 @@
               <div class="review-bottom">
                 <img src="./src/images/jhontaylor.webp" alt="John Teylor" />
                 <div class="review-info">
-                  <strong>John Teylor</strong>
-                  <span>With us from 2018</span>
+                  <strong class="review-name">John Teylor</strong>
+                  <span class="review-info-date">With us from 2018</span>
                 </div>
             </div>
           </li>
@@ -114,8 +125,8 @@
               <div class="review-bottom">
                 <img src="./src/images/elizabethgarcia.webp" alt="Elizabeth Garsia" />
                 <div class="review-info">
-                  <strong>Elizabeth Garsia</strong>
-                  <span>With us from 2020</span>
+                  <strong class="review-name">Elizabeth Garsia</strong>
+                  <span class="review-info-date">With us from 2020</span>
                 </div>
               </div>
             </div>
@@ -130,30 +141,33 @@
               <div class="review-bottom">
                 <img src="./src/images/tommaquere.webp" alt="Tom Maquare" />
                 <div class="review-info">
-                  <strong>Tom Maquare</strong>
-                  <span>With us from 2019</span>
+                  <strong class="review-name">Tom Maquare</strong>
+                  <span class="review-info-date">With us from 2019</span>
                 </div>
               </div>
             </div>
           </li>
         </ul>
+      </div>
       </section>
       <section class="order">
+        <div class="container order-container">
+          <h2 class="order-title">Order</h2>
         <form class="order-form">
             <div class="email-row">
-              <input type="email" placeholder="Write your email" >
+              <input type="email" placeholder="  Write your email" class="input input-email">
               <button type="button" class="confirm-btn">Confirm</button>
             </div>
-            <input type="text" placeholder="Your Country" >
-            <input type="text" placeholder="Your City" >
-            <input type="text" placeholder="Your Address" >
+            <input type="text" placeholder="  Your Country" class="input input-country">
+            <input type="text" placeholder="  Your City" class="input input-city">
+            <input type="text" placeholder="  Your Address" class="input input-address">
             <button type="submit" class="order-btn">Order my Nike</button>
           </form>
+        </div>
         </section>
-      </section>
     </main>
     <footer class="footer">
-        
+        <div class="container footer-container">
        <ul class="footer-questions-list">
         <li class="questions-item">
             <a class="questions-link" href="#">Advertising questions?</a>
@@ -176,10 +190,11 @@
             <a class="media-link" href="#">ColoRawe_Advertising@gmail.com</a>
         </li>
        </ul>
-       <h3 class="footer-info-text">2022 ColoRawe @All rights reserved</h3>
-       <h3 class="footer-info-text">United States</h3>
-       <a href="./index.html"><img src="./src/images/logo_3.webp" alt="logo"></a>
+       <h3 class="footer-info-text1">2022 ColoRawe @All rights reserved</h3>
+       <h3 class="footer-info-text2">United States</h3>
+       <a href="./index.html" class="footer-logo"><img src="./src/images/logo_3.webp" alt="logo"></a>
        <h3 class="footer-logo-part">С&R</h3>
+      </div>
     </footer>
   </body>
 </html>
