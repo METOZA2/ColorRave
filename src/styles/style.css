@@ -86,6 +86,8 @@ body {
   font-family: var(--fontLogo);
   font-size: 48px;
   line-height: 64px;
+  margin-top: -38px;
+  padding-left: 25px;
 }
 .hero-title {
   font-size: 144px;
@@ -94,6 +96,7 @@ body {
 .hero-subtitle {
   font-size: 72px;
   line-height: 96px;
+  margin-top: -30px;
 }
 .hero-text {
   font-family: var(--fontSecondary);
@@ -171,6 +174,18 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+/* .benefits-title:nth-child(2)::before {
+  content: "";
+  height: 346px;
+  width: 1px;
+  background-color: var(--primaryTextColor);
+}
+.benefits-title:nth-child(3) {
+  content: "";
+  height: 346px;
+  width: 1px;
+  background-color: var(--primaryTextColor);
+} */
 /* ----reviews---- */
 .reviews {
   display: flex;
@@ -209,20 +224,20 @@ body {
   margin-bottom: 20px;
 }
 .review-card {
-  background: linear-gradient(135deg, #85e3ff, #ff85e3);
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 10px 10px 65px 10px;
   max-width: 255px;
-  color: #333;
   height: 292px;
   margin: 0 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  color: #fff;
+  transition: transform 0.3s ease;
 }
-.review-card:nth-child(1) {
-  border-radius: 15px;
-  width: 255px;
-  height: 292px;
-  box-shadow: 0 30px 0 -13px #533978, 0 14px 0 -5px #7b54b2;
+.review-card1 {
+  box-shadow: 0 14px 0 -5px #7b54b2, 0 30px 0 -13px #533978;
   background: linear-gradient(
     135deg,
     #00e5e6 7.29%,
@@ -231,12 +246,9 @@ body {
     #cc5ec2 100%
   );
 }
-.review-card:nth-child(2) {
-  border-radius: 15px;
-  width: 255px;
-  height: 292px;
-  box-shadow: 0 30px 0 -13px #61337c, 0 14px 0 -5px #9159b1;
-  background-color: linear-gradient(
+.review-card2 {
+  box-shadow: 0 14px 0 -5px #9159b1, 0 30px 0 -13px #61337c;
+  background-image: linear-gradient(
     135deg,
     #ff68b4 0%,
     #ff45e1 26.04%,
@@ -244,12 +256,9 @@ body {
     #8961ff 100%
   );
 }
-.review-card:nth-child(3) {
-  border-radius: 15px;
-  width: 255px;
-  height: 292px;
-  box-shadow: 0 30px 0 -13px #732f26, 0 14px 0 -5px #b95a4c;
-  background-color: linear-gradient(
+.review-card3 {
+  box-shadow: 0 14px 0 -5px #b95a4c, 0 30px 0 -13px #732f26;
+  background: linear-gradient(
     135deg,
     #ffe128 0%,
     #ff9b5c 30.21%,
@@ -280,21 +289,6 @@ body {
   font-size: 12px;
   line-height: 14px;
   color: var(--colorTextAccent);
-}
-
-/* тестовий код 22:49  */
-
-.review-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 300px;
-  border-radius: 15px;
-  padding: 20px;
-  color: #fff;
-  transition: transform 0.3s ease;
-  box-shadow: 0px 50px 0px rgba(94, 14, 255, 0.3),
-    0px 30px 0px rgba(87, 36, 255, 0.15), 0px 12px 0px rgba(35, 72, 255, 0.15);
 }
 
 .review-text {
@@ -328,25 +322,13 @@ body {
   margin-right: 12px;
 }
 
-.review-card:nth-child(1) {
-  background: linear-gradient(135deg, #3b8dff, #8e2de2);
-}
-
-.review-card:nth-child(2) {
-  background: linear-gradient(135deg, #ff7eb9, #7a1ea1);
-}
-
-.review-card:nth-child(3) {
-  background: linear-gradient(135deg, #fceabb, #f37335);
-}
-
 /* ----order---- */
 
 .order {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 600px;
+  height: 509px;
   background-image: url(../images/backgroundgradient3.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -359,7 +341,8 @@ body {
   font-family: var(--fontPrimary);
   display: flex;
   justify-content: center;
-  padding-top: 135px;
+  margin-bottom: 33px;
+  margin-top: 21px;
 }
 
 .order-form {
@@ -564,5 +547,6 @@ body {
   margin-right: 20px;
   font-family: var(--fontLogo);
   font-size: 24px;
-  margin-top: 10px;
+  margin-top: -30px;
+  padding-right: 29px;
 }
